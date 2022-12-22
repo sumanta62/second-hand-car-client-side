@@ -2,17 +2,13 @@ import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider';
 import UseAdmin from '../../../hooks/UseAdmin';
-import Spinner from '../../../Spinner/Spinner';
 import Footer from '../../Footer/Footer';
 import Navbar from '../../Navbar/Navbar';
 
 const DashBordLayout = () => {
-    const { user, loading } = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
     const [isAdmin] = UseAdmin(user?.email);
 
-    if(loading){
-        <Spinner></Spinner>
-    }
     
     return (
         <div className=''>
