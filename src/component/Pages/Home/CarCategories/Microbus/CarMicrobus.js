@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CarMicrobus = ({ apporment, setTithment }) => {
-    const {  name, location, img, original_price, post_date, prodiuct_name, resale_price, use_year } = apporment;
+    const {  name, location, img, original_price, post_date, prodiuct_name, resale_price, use_year, details } = apporment;
     
     return (
         <div className=''>
@@ -10,7 +10,7 @@ const CarMicrobus = ({ apporment, setTithment }) => {
                 <div>
                     <img src={img} alt="" className="object-cover w-full mb-4 h-60 sm:h-96 bg-gray-500" />
                     <h2 className="mb-1 text-xl font-semibold">{prodiuct_name}</h2>
-                    <p className="text-sm text-gray-400">Eu qualisque aliquando mel, id lorem detraxit nec, ad elit minimum pri. Illum ipsum detracto ne cum. Mundi nemore te ius, vim ad illud atqui apeirian...</p>
+                    <p className="text-sm text-gray-400">{details}</p>
                 </div>
                 <div className="flex flex-wrap justify-between">
                     <div className=" text-sm text-gray-400">
