@@ -22,6 +22,7 @@ const Login = () => {
     if (token) {
         navogate(from, { replace: true })
     }
+    
     const handelLogin = data => {
         loginUser(data.email, data.password)
             .then(result => {

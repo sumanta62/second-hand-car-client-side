@@ -1,0 +1,10 @@
+.handyCardImg {
+    overflow: hidden;
+    visibility: visible;
+}
+.handyCardImg img{
+    transition: transform .4s;
+}
+.hoverImgZoom:hover img{
+    transform: scale(1.2); 
+}

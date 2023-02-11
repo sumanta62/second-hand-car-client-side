@@ -1,0 +1,23 @@
+.CarCategoriesSection{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5), url());
+    width: 100%;
+   padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 90;
+
+}
+
+.catagorySection{
+height: 360px;
+}
+.catagoryCardImg{
+    overflow: hidden;
+    visibility: visible;
+}
+.catagoryCardImg img{
+    transition: transform .4s;
+}
+.catagorySection:hover img{
+    transform: scale(1.2); 
+}
