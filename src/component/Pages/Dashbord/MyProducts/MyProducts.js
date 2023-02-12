@@ -52,7 +52,7 @@ const MyProducts = () => {
                     <h2 className="text-3xl md:text-4xl font-bold ">My Product</h2>
                     <p>If cars say a lot about who we are, this one will say I'm perfect!<br /> Liking what I can see in the rearview mirror!</p>
                 </div>
-                <div className='flex justify-center flex-wrap  gap-6 '>
+                <div className='md:grid grid-cols-2 justify-center gap-6 '>
                     {
                         myProducts.map(product => <DisplayMyProduct
                             key={product._id}

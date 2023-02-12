@@ -6,6 +6,8 @@ import Banner from '../Banner/Banner';
 import CarCategories from '../CarCategories/CarCategories/CarCategories';
 import Cuntect from '../Cuntect/Cuntect';
 import HandyCar from '../HandyCar/HandyCar';
+import DownliadSection from '../SliderSection/DownliadSection';
+import SliderSection from '../SliderSection/SliderSection';
 import WhyChoose from '../WhyChoose/WhyChoose';
 
 const Home = () => {
@@ -17,7 +19,9 @@ const Home = () => {
             <CarCategories></CarCategories>
             <WhyChoose></WhyChoose>
             <Gallery></Gallery>
-            <BlogPage></BlogPage>
+            <SliderSection/>
+            <DownliadSection/>
+            {/* <BlogPage></BlogPage> */}
             <Cuntect></Cuntect>
         </div>
     );

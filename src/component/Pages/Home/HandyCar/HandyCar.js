@@ -8,7 +8,7 @@ const HandyCar = () => {
     const { data: categaries = [], isLoading } = useQuery({
         queryKey: ['categaries'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/allCategary`)
+            const res = await fetch(`https://handler-car-server-sumanta62.vercel.app/allCategary`)
             const data = await res.json({})
             return data
         }
@@ -19,7 +19,7 @@ const HandyCar = () => {
         <div>
             <div className='p-10'>
                 <div className='px-3'>
-                    <h4 className="text-2xl text-orange-600 font-bold">Handy picked</h4>
+                    <h4 className="text-2xl text-orange-500 font-bold">Handy picked</h4>
                     <h1 className="text-3xl md:text-5xl font-bold">Featured Listings</h1>
                 </div>
             </div>

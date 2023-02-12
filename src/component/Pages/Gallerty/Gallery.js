@@ -4,7 +4,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 
 const Gallery = () => {
     return (
-        <div className='bg-gray-700 text-white'>
+        <div className='bg-gray-100 text-gray-700'>
             <section className="py-6 sm:py-12 ">
                 <div className="container p-6 mx-auto space-y-8">
                     <div className="space-y-2 text-center">

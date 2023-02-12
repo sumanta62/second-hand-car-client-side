@@ -23,7 +23,7 @@ const AvailableProduct = () => {
 
    
     return (
-        <div className='bg-gray-700 text-white'>
+        <div className='bg-gray-200 text-black'>
         <div className='py-12 w-10/12 m-auto'>
             <div className='text-center mb-8'>
                 <h2 className="text-3xl md:text-4xl font-bold ">Advertisements Product</h2>

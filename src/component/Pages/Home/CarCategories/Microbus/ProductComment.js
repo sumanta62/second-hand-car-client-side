@@ -26,7 +26,7 @@ const ProductComment = ({ rightSideGame, detailsId }) => {
             photoURL: user.photoURL,
             displayName: user.displayName,
         };
-        fetch(`http://localhost:5000/comment`, {
+        fetch(`https://handler-car-server-sumanta62.vercel.app/comment`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -48,7 +48,7 @@ const ProductComment = ({ rightSideGame, detailsId }) => {
         data: comments, isLoading, refetch, } = useQuery({
             queryKey: ["comment"],
             queryFn: async () => {
-                const res = await fetch("http://localhost:5000/comment/");
+                const res = await fetch("https://handler-car-server-sumanta62.vercel.app/comment/");
                 const result = await res.json();
                 const data = result.filter(gameId => gameId.gameDetailsId === detailsId || rightSideGame);
                 return data;
@@ -59,7 +59,7 @@ const ProductComment = ({ rightSideGame, detailsId }) => {
             "Are you sure , you went to cancel this .Comment"
         );
         if (proceed) {
-            fetch(`http://localhost:5000/comment/${id}`, {
+            fetch(`https://handler-car-server-sumanta62.vercel.app/comment/${id}`, {
                 method: "DELETE",
             })
                 .then((res) => res.json())

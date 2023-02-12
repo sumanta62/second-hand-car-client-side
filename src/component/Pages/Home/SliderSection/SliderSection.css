@@ -1,0 +1,63 @@
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 90%;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  
+  .slide {
+    display: inline-block;
+    height: 80px;
+    width: 20%;
+    border-radius: 40px;
+    padding: 10px 0;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 7px 0px;
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #d86609;
+  }
+  .downloadSection {
+    height: 350px;
+    padding: 30px 30px 0px;
+   }
+  .downloadSection img {
+    height: 350px;
+    width: 100%;
+   }
+  .downloadSection button{
+    width: 180px;
+    transition: 0.5s;
+  }
+  .downloadSection button:hover{
+    background-color: #d86609;
+    color: white;
+}
+.buyCarSection{
+    height: 350px;
+    padding: 60px ;
+}
+.buyCarSection button:hover{
+      background-color: #d86609;
+
+  }

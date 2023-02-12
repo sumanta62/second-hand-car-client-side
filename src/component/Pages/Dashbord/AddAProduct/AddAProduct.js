@@ -6,7 +6,7 @@ import { AuthContext } from '../../../context/AuthProvider';
 
 const AddAProduct = () => {
     const {user} = useContext(AuthContext);
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, formState: { errors }, handleSubmit , reset} = useForm();
     const imageHostingKey = process.env.REACT_APP_imagedb_key;
 
     const navigate = useNavigate();
@@ -48,6 +48,7 @@ const AddAProduct = () => {
                     })
                         .then(res => res.json())
                         .then(result => {
+                            reset()
                             toast.success(`${data.name} is added successfully`);
                             navigate('/dashbord/myProduct')
 
@@ -148,13 +149,9 @@ const AddAProduct = () => {
                             </div>
 
                             <div className='flex justify-center mt-5'>
-                                <input className='btn w-full md:w-3/6' value="Add Product" type="submit" />
+                                <input className='bg-orange-500 btn hover:bg-orange-500 w-full md:w-3/6' value="Add Product" type="submit" />
                             </div>
-                            {/* <div>
-                            {
-                                signUpError && <p className='text-orange-400'>{signUpError}</p>
-                            }
-                        </div> */}
+                          
                         </form>
 
                     </div>

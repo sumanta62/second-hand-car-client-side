@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
-import logo from '../../Images/logo/vehica-logo-white-retina.png'
+import logo from '../../Images/logo/vehica-retina.png'
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -25,15 +25,15 @@ const Navbar = () => {
             user?.uid ?
                 <>
                     <li><Link to='/dashbord' className='hover:underline underline-offset-8'>Dashboard</Link></li>
-                    <li><Link onClick={handlerLogOut} to='/' className="border border-orange-600 hover:bg-orange-600">Sign Out</Link></li>
+                    <li><Link onClick={handlerLogOut} to='/' className="border border-orange-100 bg-white ">Sign Out</Link></li>
                 </>
                 :
-                <li><Link to='/login' className="border border-orange-600 hover:bg-orange-600">Log in</Link></li>
+                <li><Link to='/login' className="border border-orange-100 bg-white ">Log in</Link></li>
         }
     </React.Fragment>
 
     return (
-        <div className='bg-blue-500 text-white fixed w-full z-10'>
+        <div className='bg-orange-500 w-full z-10'>
             <div className="navbar container m-auto justify-between font-bold">
                 <div className="navbar-start">
                     <div className="dropdown">

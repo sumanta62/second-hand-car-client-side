@@ -21,7 +21,6 @@ const DisplayMyProduct = ({ product, handlerDelete }) => {
             images: product.images,
             email: user.email
         }
-
         fetch(`https://handler-car-server-sumanta62.vercel.app/available`, {
             method: 'POST',
             headers: {

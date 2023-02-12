@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import '../Register/Registation.css'
 
 import { AuthContext } from '../../context/AuthProvider';
 import UseToken from '../../hooks/UseToken';
@@ -63,7 +64,7 @@ const Login = () => {
     }
 
     return (
-        <div className='py-9 bg-gray-700'>
+        <div className='py-9 registationSection' style={{backgroundImage:`url(https://images.pexels.com/photos/4629633/pexels-photo-4629633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`}}>
             <div className='h[800px] w-96 md:w-3/6 lg:w-2/6 m-auto bg-gray-900 text-white p-4 rounded-lg'>
                 <div>
                     <h2 className="text-4xl font-bold text-center">Login!</h2>
@@ -98,7 +99,7 @@ const Login = () => {
 
                         </label>
 
-                        <input className='btn btn-outline w-full text-white' value="Login" type="submit" />
+                        <input className='bg-orange-500 btn hover:bg-orange-500 w-full text-white' value="Login" type="submit" />
 
                         <div>
                             {
@@ -109,7 +110,7 @@ const Login = () => {
                     <p>New to Doctors Portal <Link className='text-primary font-bold' to='/register'>Create new Account</Link></p>
 
                     <div className="divider">OR</div>
-                    <button onClick={handlerGoogleSignin} className='btn btn-outline w-full text-white'>CONTINUE WITH GOOGLE</button>
+                    <button onClick={handlerGoogleSignin} className='bg-orange-500 btn hover:bg-orange-500 w-full text-white'>CONTINUE WITH GOOGLE</button>
                 </div>
             </div>
         </div>

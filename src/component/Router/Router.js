@@ -58,7 +58,7 @@ export const router = createBrowserRouter([
             {
                 path: '/allCategary/:id',
                 element: <Microbus></Microbus>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allCategary/${params.id}`)
+                loader: ({ params }) => fetch(`https://handler-car-server-sumanta62.vercel.app/allCategary/${params.id}`)
             },
         ]
     },

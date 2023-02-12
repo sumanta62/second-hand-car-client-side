@@ -67,7 +67,7 @@ const BookingModal = ({carBooking, setCarBooking}) => {
                         <div className="space-y-1 text-sm">
                             <input type="text" name="mettingLocations" id="mettingLocations" placeholder="meeting location" className="w-full px-4 py-3 rounded-md border border-black dark:text-black focus:dark:border-violet-400" required/>
                         </div>
-                        <button type='submit' className=" btn block w-full p-3 text-center font-bold rounded-lg text-white ">BOOK NOW</button>
+                        <button type='submit' className=" bg-orange-500 btn hover:bg-orange-500 block w-full p-3 text-center font-bold rounded-lg text-white ">BOOK NOW</button>
                     </form>
                 </div>
             </div>

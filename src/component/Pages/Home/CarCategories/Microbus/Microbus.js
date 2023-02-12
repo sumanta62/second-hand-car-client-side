@@ -22,7 +22,7 @@ const Microbus = () => {
         queryKey: ["showAllCar"],
         queryFn: async () => {
             const res = await fetch(
-                "http://localhost:5000/allCategary"
+                "https://handler-car-server-sumanta62.vercel.app/allCategary"
             );
             const data = await res.json();
 

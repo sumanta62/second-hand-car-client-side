@@ -1,0 +1,7 @@
+.registationSection{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtK0E_DG1UMApQXLe3qIDUcuCXRvpFJVdLA&usqp=CAU'));
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
