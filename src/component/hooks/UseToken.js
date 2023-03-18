@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 
 const UseToken = (email) => {
+    console.log(email)
     const [token, setToken] = useState('');
-    
     useEffect(() =>{
         if(email){
             fetch(`https://handler-car-server-sumanta62.vercel.app/jwt?email=${email}`)

@@ -56,15 +56,15 @@ const AllUsers = () => {
 
     return (
         <div>
-            <div className='mt-10 mb-5 text-center text-white'>
+            <div className='mt-10 mb-5 text-center'>
                 <h3 className="text-2xl md:text-3xl font-bold ">All Users</h3>
                 <p>Here you can see all users</p>
             </div>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto shadow-2xl mx-5 ">
                 <table className="table w-full">
 
-                    <thead>
-                        <tr>
+                    <thead >
+                        <tr style={{background:'white '}}>
                             <th></th>
                             <th>Name</th>
                             <th>Email</th>
@@ -83,9 +83,9 @@ const AllUsers = () => {
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
                                     <td>{user.users}</td>
-                                    <td>{user?.role !== 'admin' && <button onClick={() => handlerMakeAdmin(user._id)} className="btn btn-xs btn-primary">Make Admin</button>}</td>
-                                    <td><button  className="btn btn-xs btn-success">Verify </button></td>
-                                    <td><button onClick={() =>handlerDeleteUsers(user._id)} className="btn btn-xs btn-danger">Delete</button></td>
+                                    <td>{user?.role !== 'admin' && <button onClick={() => handlerMakeAdmin(user._id)} className="btn btn-xs btn-primary rounded-none border-none">Make Admin</button>}</td>
+                                    <td><button  className="btn btn-xs btn-success rounded-none border-none">Verify </button></td>
+                                    <td><button onClick={() =>handlerDeleteUsers(user._id)} className="btn btn-xs bg-orange-500 rounded-none border-none">Delete</button></td>
                                 </tr>
                             )
                         }

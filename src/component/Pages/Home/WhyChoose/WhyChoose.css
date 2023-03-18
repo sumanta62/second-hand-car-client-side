@@ -1,0 +1,16 @@
+
+
+.transition-animation{
+    transition: 0.5s;
+}
+.transition-icons{
+    transition: 0.7s;    
+}
+.transition-animation:hover{
+    box-shadow: 0 4px 8px 0 rgba(51, 50, 50, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.transition-animation:hover .transition-icons{
+   background-color: rgba(252, 210, 73, 0.938);
+   color: rgb(255, 255, 255);
+   transform: rotateY(180deg);
+}

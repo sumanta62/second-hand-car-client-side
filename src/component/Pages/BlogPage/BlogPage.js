@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogPage = () => {
     return (
-        <div>
+        <div className='pt-12'>
             <section className="bg-gray-800 text-white">
                 <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
                     <h2 className="mb-12 text-3xl md:text-4xl font-bold leading-none text-center">Frequently Asked Questions</h2>

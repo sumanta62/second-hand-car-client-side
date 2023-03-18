@@ -45,8 +45,8 @@ const DisplayMyProduct = ({ product, handlerDelete }) => {
 
 
     return (
-        <div className=''>
-            <div className="flex flex-col p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100">
+        <div className='mb-20'>
+            <div className="flex flex-col p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-800 text-gray-100">
                 <div>
                     <img src={product?.images} alt="" className="object-cover w-full mb-4 h-60 bg-gray-500" />
                     <h2 className="mb-1 text-xl font-semibold">{product?.product_name}</h2>
@@ -81,12 +81,12 @@ const DisplayMyProduct = ({ product, handlerDelete }) => {
                 <div className='flex items-end justify-between'>
                     <div>
                         <Link >
-                            <button onClick={() => handlerDelete(product?._id)} className="btn text-sm">Delete</button>
+                            <button onClick={() => handlerDelete(product?._id)} className="w-32 btn-md border shadow-2xl  font-bold text-white hover:bg-amber-500 transform duration-500 float-right">Delete</button>
                         </Link>
                     </div>
                     <div>
                         <Link >
-                            <button onClick={() => handlerAvailable(product)} className="btn text-sm">Available</button>
+                            <button onClick={() => handlerAvailable(product)} className="w-32 btn-md border shadow-2xl  font-bold text-white  hover:bg-amber-500 transform duration-500 float-right">Available</button>
                         </Link>
                     </div>
                 </div>

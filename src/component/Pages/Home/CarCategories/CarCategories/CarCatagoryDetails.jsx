@@ -31,7 +31,6 @@ const CarCatagoryDetails = () => {
                                             <img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" className='w-6' alt="" />
                                             <small>{catagoryDetails?.location}</small>
                                         </button>
-
                                     </div>
                                     <div className="  text-sm text-gray-400">
                                         <button type="button" className="flex items-center p-1 space-x-1.5 ">
@@ -66,7 +65,6 @@ const CarCatagoryDetails = () => {
                                                 // onClick={() => setTithment(catagoryDetails)}
                                                 htmlFor="booking-modal"
                                                 className="btn btn-success font-bold w-full">Book now</label>
-
                                         </div>
                                     </div>
                                 </div>

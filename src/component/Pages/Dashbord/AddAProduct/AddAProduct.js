@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider';
 
 const AddAProduct = () => {
-    const {user} = useContext(AuthContext);
-    const { register, formState: { errors }, handleSubmit , reset} = useForm();
+    const { user } = useContext(AuthContext);
+    const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const imageHostingKey = process.env.REACT_APP_imagedb_key;
 
     const navigate = useNavigate();
@@ -27,22 +27,21 @@ const AddAProduct = () => {
                 if (imgbb.success) {
                     const product = {
                         product_name: data.name,
-                        category_name:data.category,
+                        category_name: data.category,
                         location: data.location,
                         price: data.price,
-                        purchase_date:data.purchase,
-                        description:data.description,
-                        condition:data.condition,
-                        Phone:data.Phone,
+                        purchase_date: data.purchase,
+                        description: data.description,
+                        condition: data.condition,
+                        Phone: data.Phone,
                         images: imgbb.data.url,
-                        email:user.email
+                        email: user.email
                     }
-                  
-                    fetch(`https://handler-car-server-sumanta62.vercel.app/addProduct`, {
+
+                    fetch(`https://handler-car-server.vercel.app/addProduct`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
-                            authoraization: `bearer ${localStorage.getItem('accessToken')}`
                         },
                         body: JSON.stringify(product)
                     })
@@ -60,32 +59,33 @@ const AddAProduct = () => {
 
     return (
         <div>
-            <div className='my-16'>
-                <div className='h[800px]  w-5/6 md:w-4/6 m-auto bg-blue-50 p-4 rounded-lg'>
+            <div className=''>
+                <div className=' w-5/6 md:w-4/6 m-auto bg-blue-50 p-4 rounded-lg shadow-2xl mt-10 mb-24'>
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-center">Add Product</h2>
                         <form onSubmit={handleSubmit(handlerAddProduct)}>
-
-                            <div className="form-control w-full ">
-                                <label className="label">
-                                    <span className="">Product Name</span>
-                                </label>
-                                <input type="text" {...register("name", { required: "Name is required" })} className="input input-bordered w-full " placeholder='Product Name' />
-                                {errors.name && <p className='text-orange-400'>{errors.name?.message}</p>}
-                            </div>
-                            <div className="form-control w-full ">
-                                <label className="label">
-                                    <span className="">Location</span>
-                                </label>
-                                <input type="text" {...register("location", { required: "location is required" })} className="input input-bordered w-full " placeholder='Location' />
-                                {errors.location && <p className='text-orange-400'>{errors.location?.message}</p>}
+                            <div className='grid grid-row md:grid-cols-2 gap-2'>
+                                <div className="form-control w-full ">
+                                    <label className="label">
+                                        <span className="">Product Name</span>
+                                    </label>
+                                    <input type="text" {...register("name", { required: "Name is required" })} className="input input-bordered w-full " placeholder='Product Name' />
+                                    {errors.name && <p className='text-orange-400'>{errors.name?.message}</p>}
+                                </div>
+                                <div className="form-control w-full ">
+                                    <label className="label">
+                                        <span className="">Location</span>
+                                    </label>
+                                    <input type="text" {...register("location", { required: "location is required" })} className="input input-bordered w-full " placeholder='Location' />
+                                    {errors.location && <p className='text-orange-400'>{errors.location?.message}</p>}
+                                </div>
                             </div>
                             <div className='grid grid-row md:grid-cols-2 gap-2'>
                                 <div className="form-control w-full ">
                                     <label className="label">
                                         <span className="">Image</span>
                                     </label>
-                                    <input type="file" {...register("image", { required: "image is required" })} className="input input-bordered w-full " placeholder='image' />
+                                    <input type="file" {...register("image", { required: "image is required" })} className="input input-bordered w-full p-2" placeholder='image' />
                                     {errors.image && <p className='text-orange-400'>{errors.image?.message}</p>}
                                 </div>
                                 <div className="form-control w-full ">
@@ -149,9 +149,9 @@ const AddAProduct = () => {
                             </div>
 
                             <div className='flex justify-center mt-5'>
-                                <input className='bg-orange-500 btn hover:bg-orange-500 w-full md:w-3/6' value="Add Product" type="submit" />
+                                <input className="w-40 btn-md border border-gray-600 shadow-2xl  font-bold hover:text-white  hover:bg-amber-500 transform duration-500 float-right" value="Add Product" type="submit" />
                             </div>
-                          
+
                         </form>
 
                     </div>

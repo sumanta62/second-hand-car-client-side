@@ -5,45 +5,45 @@ import { FaDiscord, FaFacebook, FaGoogle, FaPinterest, FaTwitter, FaYoutube } fr
 const Footer = () => {
     return (
         <div >
-            <div className='mx-auto overflow-hidden text-gray-400 bg-gray-900'>
+            <div className='mx-auto overflow-hidden text-gray-900 bg-orange-50'>
                 <footer className="w-11/12 m-auto py-8 flex flex-wrap justify-between md:justify-around gap-3">
                     <div className="">
-                    <h1 className='text-gray-400 font-bold mb-2 '>Home Page </h1>
-                        <p className="h-1 w-16 rounded-t-2xl bg-white"></p>
+                    <h1 className=' font-bold mb-2 '>Home Page </h1>
+                        <p className="h-1 w-16 rounded-t-2xl bg-gray-600"></p>
                         <div className="my-8 text-left">
-                            <ul className="text-gray-400">
-                                <li className="text-white">Featured Listings</li>
-                                <li className="text-white">Aboute</li>
-                                <li className="text-white">Advertisements</li>
-                                <li className="text-white">Blog</li>
+                            <ul className="">
+                                <li className="">Featured Listings</li>
+                                <li className="">Aboute</li>
+                                <li className="">Advertisements</li>
+                                <li className="">Blog</li>
                             </ul>
                         </div>
                     </div>
                     <div className="">
                     <h1 className='font-bold mb-2'>Dashboard </h1>
-                        <p className="h-1 w-16 rounded-t-2xl bg-white"></p>
+                        <p className="h-1 w-16 rounded-t-2xl bg-gray-600"></p>
                         <div className="my-8 text-left">
-                            <ul className="text-gray-400">
-                                <li className="text-white">My Prders</li>
-                                <li className="text-white">Add A Product</li>
-                                <li className="text-white">All Users</li>
-                                <li className="text-white">My Product</li>
+                            <ul className="">
+                                <li className="">My Prders</li>
+                                <li className="">Add A Product</li>
+                                <li className="">All Users</li>
+                                <li className="">My Product</li>
                             </ul>
                         </div>
                     </div>
                     <div className=" left-4 ">
-                        <h1 className='text-gray-400 font-bold mb-2'>Car Catagory</h1>
-                        <p className="h-1 w-16  rounded-t-2xl bg-white"></p>
+                        <h1 className=' font-bold mb-2'>Car Catagory</h1>
+                        <p className="h-1 w-16  rounded-t-2xl bg-gray-600"></p>
                         <div className="my-8  ">
-                            <ul className="text-gray-400">
-                                <div className="flex  items-center">
-                                    <FaFacebook /> <li className="text-white"> Luxury Car</li>
+                            <ul className="">
+                                <div className="flex  items-center cursor-pointer hover:text-blue-600">
+                                    <FaFacebook /> <li className=" ml-2"> Luxury Car</li>
                                 </div>
-                                <div className="flex  items-center">
-                                    <FaYoutube /> <li className="text-white"> Microbus Tv</li>
+                                <div className="flex  items-center cursor-pointer hover:text-blue-600">
+                                    <FaYoutube /> <li className=" ml-2"> Microbus Tv</li>
                                 </div>
-                                <div className="flex  items-center">
-                                    <FaDiscord /> <li className="text-white"> Electric Car_live</li>
+                                <div className="flex  items-center cursor-pointer hover:text-blue-600">
+                                    <FaDiscord /> <li className=" ml-2"> Electric Car_live</li>
                                 </div>
                             </ul>
                             <button className="inline-flex items-center py-3 rounded-lg dark:bg-blue-400 mr-2 p-1">
@@ -59,7 +59,7 @@ const Footer = () => {
                                     <span className="font-semibold title-font">Google Play</span>
                                 </span>
                             </button>
-                            <button className="inline-flex items-center text-gray-400 px-2 py-3 rounded-lg dark:bg-violet-400 ">
+                            <button className="inline-flex items-center  px-2 py-3 rounded-lg dark:bg-violet-400 ">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 50 50"
@@ -67,7 +67,7 @@ const Footer = () => {
                                 >
                                     <path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"></path>
                                 </svg>
-                                <span className="flex text-gray-400 flex-col items-start ml-4 leading-none">
+                                <span className="flex  flex-col items-start ml-4 leading-none">
                                     <span className="mb-1  text-xs">Download </span>
                                     <span className="font-semibold title-font">App Store</span>
                                 </span>
@@ -87,30 +87,30 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className="w-11/12 md:w-7/12 m-auto flex justify-center items-center text-justify pb-10"> 
-                        <p className='text-gray-400'>
+                        <p className=' text-center'>
                         Handcrafted by and for bikers @ 2023. All related content, characters, names, and materials that could be part of an existing work, are the exclusive property of their authors.</p>
                     </div>
                 </footer>
-                <footer className='text-gray-400 flex justify-center items-center pb-5'>
+                <footer className=' flex justify-center items-center pb-5'>
                     <p className="mr-3"> Privacy Policy </p>
                     <p className="mr-3"> Parsonal Service</p>
                     <Link to="/register">
                         <p> Register</p>
                     </Link>
                 </footer>
-                <footer className="text-gray-400 flex justify-center items-center pb-10 ">
-                    <div className="flex items-center gap-6 text-[#dedee2]">
-                        <FaFacebook className="text-white" title="Facebook" />
+                <footer className=" flex justify-center items-center pb-10 ">
+                    <div className="flex items-center gap-6 text-[#0303f5]">
+                        <FaFacebook className=" cursor-pointer hover:text-blue-600" title="Facebook" />
                         <FaTwitter
-                            className="text-white"
+                            className=" cursor-pointer hover:text-blue-600"
                             title="Twitter"
                         ></FaTwitter>
                         <FaPinterest
-                            className="text-white"
+                            className="  cursor-pointer hover:text-blue-600"
                             title="Pinterest"
                         ></FaPinterest>
                         <FaGoogle
-                            className="text-white"
+                            className="  cursor-pointer hover:text-blue-600"
                             title="Google"
                         ></FaGoogle>
                     </div>

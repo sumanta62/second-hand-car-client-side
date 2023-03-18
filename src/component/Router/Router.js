@@ -30,8 +30,8 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/aboute',
-                element: <About></About>
+                path: '/Services',
+                element: <CarCategories></CarCategories>
             },
             {
                 path: '/',
@@ -44,7 +44,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/avaliabale',
-                element:<PrivateRoute><AvailableProduct></AvailableProduct></PrivateRoute>,
+                element:<AvailableProduct></AvailableProduct>,
             },
             {
                 path: '/register',
@@ -65,6 +65,7 @@ export const router = createBrowserRouter([
     {
         path:'/dashbord',
         errorElement:<DisplayError></DisplayError>,
+        // element:<DashBordLayout></DashBordLayout>,
         element:<PrivateRoute><DashBordLayout></DashBordLayout></PrivateRoute>,
         children: [
             {

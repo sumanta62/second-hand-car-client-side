@@ -48,7 +48,7 @@ const BookingModal = ({carBooking, setCarBooking}) => {
             <input type="checkbox" id="bookingModal" className="modal-toggle" />
             <div className="modal ">
                 <div className="modal-box relative text-black">
-                <label htmlFor="bookingModal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <label htmlFor="bookingModal" className="btn btn-sm btn-circle absolute right-2 top-2 bg-orange-400 border-none">✕</label>
                     <h3 className="text-lg font-bold">{carBooking?.name}</h3>
                     <form onSubmit={handlerBookSubmit}  className="space-y-6 pt-8">
                         <div className="space-y-1 text-sm">
@@ -67,7 +67,9 @@ const BookingModal = ({carBooking, setCarBooking}) => {
                         <div className="space-y-1 text-sm">
                             <input type="text" name="mettingLocations" id="mettingLocations" placeholder="meeting location" className="w-full px-4 py-3 rounded-md border border-black dark:text-black focus:dark:border-violet-400" required/>
                         </div>
-                        <button type='submit' className=" bg-orange-500 btn hover:bg-orange-500 block w-full p-3 text-center font-bold rounded-lg text-white ">BOOK NOW</button>
+                        <div className=' w-40 m-auto'>
+                        <button type='submit' className="btn-md border shadow-2xl font-bold w-full m-auto bg-amber-500 transform duration-500 text-white ">BOOK NOW</button>
+                        </div>
                     </form>
                 </div>
             </div>

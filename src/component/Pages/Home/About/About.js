@@ -3,7 +3,7 @@ import image from '../../../Images/Banner/pexels-photo-175568.jpeg'
 
 const About = () => {
     return (
-        <div className=''>
+        <div className='pt-10'>
             <section className="bg-gray-800 text-gray-100">
                 <div className="container flex items-center flex-col md:flex-col-2 justify-center mx-auto py-10 md:flex-row lg:justify-start">
                     <div className="flex w-full md:w-3/6 lg:2/5   ">

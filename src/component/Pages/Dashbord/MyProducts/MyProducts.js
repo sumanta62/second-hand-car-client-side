@@ -12,16 +12,12 @@ const MyProducts = () => {
         <Spinner></Spinner>
     }
 
-    const url = `https://handler-car-server-sumanta62.vercel.app/addProduct?email=${user?.email}`
+    const url = `https://handler-car-server.vercel.app/addProduct?email=${user?.email}`
 
     const { data: myProducts = [] } = useQuery({
         queryKey: ['myOrders', user?.email],
         queryFn: async () => {
-            const res = await fetch(url, {
-                headers: {
-                    authoraization: `bearer ${localStorage.getItem('accessToken')}`
-                }
-            });
+            const res = await fetch(url, );
             const data = await res.json();
             return data;
         },
@@ -46,7 +42,7 @@ const MyProducts = () => {
     }
 
     return (
-        <div className='bg-gray-800 text-white'>
+        <div className='bg-slate-100'>
             <div className='py-12 w-10/12 m-auto'>
                 <div className='text-center mb-8'>
                     <h2 className="text-3xl md:text-4xl font-bold ">My Product</h2>

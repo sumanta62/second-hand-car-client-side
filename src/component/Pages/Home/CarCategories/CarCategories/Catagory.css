@@ -1,23 +1,47 @@
-.CarCategoriesSection{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5), url());
-    width: 100%;
-   padding: 50px 0;
-    background-position: center;
-    background-size: cover;
-    opacity: 90;
 
+.catagorySection {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.singaleCar {
+    position: absolute;
+    /* z-index: 1; */
 }
 
-.catagorySection{
-height: 360px;
-}
-.catagoryCardImg{
+.catagoryCardImg {
     overflow: hidden;
     visibility: visible;
 }
-.catagoryCardImg img{
+
+.catagoryCardImg img {
     transition: transform .4s;
 }
-.catagorySection:hover img{
-    transform: scale(1.2); 
+
+
+.catagorySection:hover img {
+    transform: scale(1.2);
+}
+
+.carShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(182, 136, 37, 0.363);
+    top: -100%;
+    transition: 0.5s;
+}
+.cardButton{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.catagorySection:hover .carShadow{
+    top: 0;
+}
+.catagorySection:hover .cardButton{
+    bottom: 0;
 }

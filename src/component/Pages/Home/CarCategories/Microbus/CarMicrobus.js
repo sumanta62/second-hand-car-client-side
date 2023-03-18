@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CarMicrobus = ({ apporment, setTithment }) => {
-    const {  name, location, img, original_price, post_date, prodiuct_name, resale_price, use_year, details } = apporment;
-    
+    const { name, location, img, original_price, post_date, prodiuct_name, resale_price, use_year, details } = apporment;
+
     return (
         <div className=''>
             <div className="flex flex-col p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100">
@@ -49,17 +49,16 @@ const CarMicrobus = ({ apporment, setTithment }) => {
                             <span className="text-sm font-semibold"> {name}
                             </span>
                             <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" strokeLinejoin="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" strokeLinejoin="1.5" stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
                             </span>
                         </div>
                         <div>
-                                <label
-                                onClick={()=> setTithment(apporment)}
-                                htmlFor="booking-modal" 
+                            <label
+                                onClick={() => setTithment(apporment)}
+                                htmlFor="booking-modal"
                                 className="btn text-sm">Book now</label>
-                            
                         </div>
                     </div>
                 </div>

@@ -130,7 +130,7 @@ const CheckoutFrom = ({ payment }) => {
                     }}
                 />
                 <button
-                    className='btn btn-primary btn-sm my-4'
+                    className='btn btn-primary btn-sm my-4 rounded-none'
                     type="submit"
                     disabled={!stripe || !clientSecret || processing}
                 >
